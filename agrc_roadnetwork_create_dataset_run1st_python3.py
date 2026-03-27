@@ -306,7 +306,7 @@ if __name__ == "__main__":
 
 
 print("Script shutting down ...")
-# Stop timer and print end time in UTC
+# Stop timer and print end time
 readable_end = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 print("The script end time is {}".format(readable_end))
 print("Time elapsed: {:.2f}s".format(time.time() - start_time))
