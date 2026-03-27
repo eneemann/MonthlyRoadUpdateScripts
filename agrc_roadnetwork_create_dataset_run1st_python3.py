@@ -51,7 +51,6 @@ def main():
     # import the sgid roads fc
     print("Importing SGID Roads ...")
     #expression = "ZIPCODE_L in ('84108', '84106', '84105')" ##TESTING STUFF##
-    expression = ""
     out_roads = rf"{network_fgdb_dataset}\Roads"
     # network_roads = arcpy.FeatureClassToFeatureClass_conversion(sgid_roads, str(network_fgdb) + r'/NetworkDataset', 'Roads', expression)
     network_roads = arcpy.conversion.ExportFeatures(sgid_roads, out_roads)
